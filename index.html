@@ -1,80 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>bankingApp</title>
 </head>
-<body>    
-    <nav class="bg-blue-500 text-white">
+
+<body>
+    <nav class="bg-white-500 text-gray-600">
         <div class="container mx-auto flex justify-between items-center p-4">
-          <!-- Logo -->
-          <a href="#" class="text-xl font-bold flex-shrink-0">AsovBanking</a>
-    
-          <!-- Menu -->
-          <div class="hidden md:flex flex-1 justify-center space-x-6">
+            <!-- Logo -->
+            <a href="#" class="text-xl font-bold flex-shrink-0">AsovBanking</a>
+
+            <!-- Menu -->
+            <div class="hidden md:flex flex-1 justify-center space-x-6">
+                <a href="#" class="hover:text-gray-200">Home</a>
+                <a href="#" class="hover:text-gray-200">About</a>
+                <a href="#" class="hover:text-gray-200">contact</a>
+                <a href="#" class="hover:text-gray-200">blog</a>
+                <a href="#" class="hover:text-gray-200">careers</a>
+            </div>
+                <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                  Request Invite
+                </button>
+
+            
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="block md:hidden focus:outline-none focus:ring-2 focus:ring-white">
+                <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col items-center space-y-2 bg-white-600 p-4">
             <a href="#" class="hover:text-gray-200">Home</a>
             <a href="#" class="hover:text-gray-200">About</a>
             <a href="#" class="hover:text-gray-200">contact</a>
             <a href="#" class="hover:text-gray-200">blog</a>
             <a href="#" class="hover:text-gray-200">careers</a>
-          </div>
-    
-          <!-- Mobile Menu Button -->
-          <button
-            id="menu-toggle"
-            class="block md:hidden focus:outline-none focus:ring-2 focus:ring-white"
-          >
-            <svg
-              class="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
+            <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                Request Invite
+              </button>
+
         </div>
-    
-        <!-- Mobile Menu -->
-        <div
-          id="mobile-menu"
-          class="hidden md:hidden flex flex-col items-center space-y-2 bg-blue-600 p-4"
-        >
-        <a href="#" class="hover:text-gray-200">Home</a>
-        <a href="#" class="hover:text-gray-200">About</a>
-        <a href="#" class="hover:text-gray-200">contact</a>
-        <a href="#" class="hover:text-gray-200">blog</a>
-        <a href="#" class="hover:text-gray-200">careers</a>
-        </div>
-      </nav>
-    
-      <main class="p-4">
-        <p class="text-lg">This is a simple static page styled with Tailwind CSS v4.0.</p>
-      </main>
-      <footer class="p-4 bg-gray-800 text-white text-center">
-        <p>&copy; 2025 AsovBanking</p>
-        <p class="text-lg">This is a simple static page styled with Tailwind CSS v4.0.</p>
-      </footer>
-  </h1>
+        
+    </nav>
+
+    <main class="p-0 bg-gray-100">
+        <section class="container mx-auto p-1">
+            <div class="flex flex-col md:flex-row">
+                <!-- Left Part -->
+                <div class="flex-1 bg-white-500 text-black p-6 text-center">
+                    <h2 class="text-2xl font-bold">Left Side</h2>
+                    <p>This is the left side of the section.</p>
+                    <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                        Request Invite
+                      </button>
+                </div>
+
+                <!-- Right Part -->
+                <div class="flex-1 bg-white-500 text-black p-6 text-center">
+                    <h2 class="text-2xl font-bold">Right Side</h2>
+                    <p>This is the right side of the section.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto p-6">
+            <!-- First Row: Write-Up -->
+            <div class="mb-8 text-left  w-full  mx-auto">
+                <h2 class="text-3xl font-bold text-blue-500 mb-4">Why choose AsovBanking?</h2>
+                <p class="text-gray-700 text-lg">
+                    We leverage open banking to turn your bank account into your financial hub.
+                </p>
+                <p>Control your finance like never before.</pp>
+
+            </div>
+
+            <!-- Second Row: Cards in Columns -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Card Image 1" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 1</h3>
+                        <p class="text-gray-600 mt-2">Brief description of this card's content.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Card Image 2" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 2</h3>
+                        <p class="text-gray-600 mt-2">Another brief description goes here.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Card Image 3" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 3</h3>
+                        <p class="text-gray-600 mt-2">Highlight unique features in this card.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/300x200" alt="Card Image 4" class="w-full">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 4</h3>
+                        <p class="text-gray-600 mt-2">Another great feature highlighted here!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container mx-auto">
+            <h1>Latest Acticles</h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Card Image 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 1</h3>
+                        <p class="text-gray-600 mt-2">A brief description about the first card goes here.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Card Image 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 2</h3>
+                        <p class="text-gray-600 mt-2">A brief description about the second card goes here.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Card Image 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 3</h3>
+                        <p class="text-gray-600 mt-2">A brief description about the third card goes here.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <img src="https://via.placeholder.com/400x250" alt="Card Image 4" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold text-gray-800">Card Title 4</h3>
+                        <p class="text-gray-600 mt-2">A brief description about the fourth card goes here.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="p-4 bg-gray-800 text-white text-center">
+        <section class="container mx-auto bg-gray-800">
+            <div class="grid grid-cols-12 gap-6">
+                <!-- First Section: 2 Columns -->
+                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-bold text-white-800">AsovBanking</h3>
+                    <div class="container mx-auto text-center">
+                        <div class="flex justify-center space-x-6">
+                            <!-- Facebook Icon -->
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                             <!-- yotube Icon -->
+                             <a href="#" class="text-red-800 hover:text-blue-600 text-2xl">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+
+                            <!-- Twitter Icon -->
+                            <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                             <!-- press Icon -->
+                             <a href="#" class="text-blue-700 hover:text-blue-900 text-2xl">
+                                <i class="fab fa-pinterest-p"></i>
+                            </a>
+
+                            <!-- Instagram Icon -->
+                            <a href="#" class="text-pink-500 hover:text-pink-700 text-2xl">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Second Section: 2 Columns -->
+                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
+                    <p class="text-white-600 mt-2">About</p>
+                    <p class="text-white-600 mt-2">Contact</p>
+                    <p class="text-white-600 mt-2">Blog</p>
+
+                </div>
+
+                <!-- Third Section: 2 Columns -->
+                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
+                    <p class="text-white-600 mt-2">career</p>
+                    <p class="text-white-600 mt-2">Support</p>
+                    <p class="text-white-600 mt-2">Privacy</p>
+
+                </div>
+
+                <!-- Fourth Section: 6 Columns (Larger Section) -->
+                <div class="col-span-12 sm:col-span-12 md:col-span-6 bg-gray-800 p-4 shadow-lg rounded-lg">
+                    <div class="container mx-auto text-center">
+                        <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                          Request Invite
+                        </button>
+                </div>
+                <p>@AsovBanking All Right Reserved</p>
+            </div>
+        </section>
+        <p class="text-sm">&copy; 2025 AsovBanking</p>
+        <p class="text-sm">This is a simple static page styled with Tailwind CSS v4.0.</p>
+    </footer>
 
 
-  <script>
-    // Mobile menu toggle functionality
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
 
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
+    <script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
