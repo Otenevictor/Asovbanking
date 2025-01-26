@@ -7,10 +7,74 @@
     <link rel="stylesheet" href="styles.css">
     <title>bankingApp</title>
 </head>
-<body>
-    <h1>BANKINGAPP</h1>
-     <h1 class="text-3xl font-bold text-red-500 underline">
-    Hello world!
+<body>    
+    <nav class="bg-blue-500 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+          <!-- Logo -->
+          <a href="#" class="text-xl font-bold flex-shrink-0">AsovBanking</a>
+    
+          <!-- Menu -->
+          <div class="hidden md:flex flex-1 justify-center space-x-6">
+            <a href="#" class="hover:text-gray-200">Home</a>
+            <a href="#" class="hover:text-gray-200">About</a>
+            <a href="#" class="hover:text-gray-200">contact</a>
+            <a href="#" class="hover:text-gray-200">blog</a>
+            <a href="#" class="hover:text-gray-200">careers</a>
+          </div>
+    
+          <!-- Mobile Menu Button -->
+          <button
+            id="menu-toggle"
+            class="block md:hidden focus:outline-none focus:ring-2 focus:ring-white"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden md:hidden flex flex-col items-center space-y-2 bg-blue-600 p-4"
+        >
+        <a href="#" class="hover:text-gray-200">Home</a>
+        <a href="#" class="hover:text-gray-200">About</a>
+        <a href="#" class="hover:text-gray-200">contact</a>
+        <a href="#" class="hover:text-gray-200">blog</a>
+        <a href="#" class="hover:text-gray-200">careers</a>
+        </div>
+      </nav>
+    
+      <main class="p-4">
+        <p class="text-lg">This is a simple static page styled with Tailwind CSS v4.0.</p>
+      </main>
+      <footer class="p-4 bg-gray-800 text-white text-center">
+        <p>&copy; 2025 AsovBanking</p>
+        <p class="text-lg">This is a simple static page styled with Tailwind CSS v4.0.</p>
+      </footer>
   </h1>
+
+
+  <script>
+    // Mobile menu toggle functionality
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
