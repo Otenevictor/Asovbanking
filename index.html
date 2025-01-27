@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="bg-white-500 text-gray-600">
+    <nav class="bg-white-500 text-gray-600 px-6 ">
         <div class="container mx-auto flex justify-between items-center p-4">
             <!-- Logo -->
             <a href="#" class="text-xl font-bold flex-shrink-0">AsovBanking</a>
@@ -24,11 +24,12 @@
                 <a href="#" class="hover:text-gray-200">blog</a>
                 <a href="#" class="hover:text-gray-200">careers</a>
             </div>
-                <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
-                  Request Invite
-                </button>
+            <button
+                class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                Request Invite
+            </button>
 
-            
+
 
             <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="block md:hidden focus:outline-none focus:ring-2 focus:ring-white">
@@ -46,37 +47,50 @@
             <a href="#" class="hover:text-gray-200">contact</a>
             <a href="#" class="hover:text-gray-200">blog</a>
             <a href="#" class="hover:text-gray-200">careers</a>
-            <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+            <button
+                class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
                 Request Invite
-              </button>
+            </button>
 
         </div>
-        
+
     </nav>
 
-    <main class="p-0 bg-gray-100">
-        <section class="container mx-auto p-1">
-            <div class="flex flex-col md:flex-row">
+    <main class="pb-6 ">
+        <section class="container mx-0 p-1 bg-white-500">
+            <div class="flex flex-col  bg-white-500 md:flex-row h-120">
                 <!-- Left Part -->
-                <div class="flex-1 bg-white-500 text-black p-6 text-center">
-                    <h2 class="text-2xl font-bold">Left Side</h2>
-                    <p>This is the left side of the section.</p>
-                    <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
-                        Request Invite
-                      </button>
+                <div class="flex-1 bg-white text-black flex justify-center items-center p-0">
+                    <div class="text-left max-w-lg">
+                        <h2 class="text-3xl font-bold mb-4">Next generation digital banking</h2>
+                        <p class="mb-6 text-gray-600">
+                            Take your financial life online. Your Asovbanking account will be a one-stop-shop for
+                            spending, saving, budgeting, investing, and much more.
+                        </p>
+                        <button
+                            class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                            Request Invite
+                        </button>
+                    </div>
                 </div>
 
                 <!-- Right Part -->
-                <div class="flex-1 bg-white-500 text-black p-6 text-center">
-                    <h2 class="text-2xl font-bold">Right Side</h2>
-                    <p>This is the right side of the section.</p>
+                <div class="flex-1 relative overflow-hidden  bg-white-500">
+                    <div class="absolute inset-0 bg-cover bg-left w-full h-full"
+                        style="background-image: url('https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930390/bg-intro-desktop_rec7dv.svg');">
+                    </div>
+                    <!-- Content Image -->
+                    <div class="absolute inset-0 flex justify-center  items-end">
+                        <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930366/image-mockups_gd7pzy.png"
+                            alt="Overlay Image" class="w-90 h-90 object-contain translate-y-12">
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="container mx-auto p-6">
+        <section class="container mx-auto p-6  mx-0 p-1 bg-gray-100 -z-10 bg-opacity-50 ">
             <!-- First Row: Write-Up -->
-            <div class="mb-8 text-left  w-full  mx-auto">
-                <h2 class="text-3xl font-bold text-blue-500 mb-4">Why choose AsovBanking?</h2>
+            <div class="mb-8 text-left  w-full  mx-auto ">
+                <h2 class="text-3xl font-bold text-black-500 mb-4">Why choose AsovBanking?</h2>
                 <p class="text-gray-700 text-lg">
                     We leverage open banking to turn your bank account into your financial hub.
                 </p>
@@ -85,118 +99,130 @@
             </div>
 
             <!-- Second Row: Cards in Columns -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 bg-gray-100">
                 <!-- Card 1 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Card Image 1" class="w-full">
+                <div class=" rounded-lg overflow-hidden bg-gray-100">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930583/icon-online_y6ow6v.svg"
+                        alt="Card Image 1" class="w-18 h-18 object-contain mr-4 p-3">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 1</h3>
-                        <p class="text-gray-600 mt-2">Brief description of this card's content.</p>
+                        <h3 class="text-xl font-bold text-gray-800">Online Banking</h3>
+                        <p class="text-gray-600 mt-2">Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world</p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Card Image 2" class="w-full">
+                <div class="bg-grey-100 rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737931880/icon-budgeting_j7c7gr.svg"
+                        alt="Card Image 1" class="w-18 h-18 object-contain mr-4 p-3">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 2</h3>
-                        <p class="text-gray-600 mt-2">Another brief description goes here.</p>
+                        <h3 class="text-xl font-bold text-gray-800">Simple Budgeting</h3>
+                        <p class="text-gray-600 mt-2">See exactly where your money geos each month. receive notifications when you're close to hitting your limits.</p>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Card Image 3" class="w-full">
+                <div class="bg-grey-100  rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930547/icon-onboarding_czzt6i.svg"
+                        alt="Card Image 1" class="w-18 h-18 object-contain mr-4 p-3">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 3</h3>
-                        <p class="text-gray-600 mt-2">Highlight unique features in this card.</p>
+                        <h3 class="text-xl font-bold text-gray-800">Fast Onboarding</h3>
+                        <p class="text-gray-600 mt-2">we don't do branches. Open your account in minutes online and start taking control of your finances right away.</p>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/300x200" alt="Card Image 4" class="w-full">
+                <div class="bg-grey-100  rounded-lg overflow-hidden">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737931578/icon-api_fwebxl.svg"
+                        alt="Card Image 1" class="w-18 h-18 object-contain mr-4 p-3">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 4</h3>
-                        <p class="text-gray-600 mt-2">Another great feature highlighted here!</p>
+                        <h3 class="text-xl font-bold text-gray-800">Open API</h3>
+                        <p class="text-gray-600 mt-2">Manage our savings, investments, pension, and much more from one account.Tracking your money has never been easier.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="container mx-auto">
-            <h1>Latest Acticles</h1>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <section class="container mx-auto bg-white-500 m-7 px-6 py-6 m-3">
+            <h1 class="text-2xl p-4 font-bold text-gray-800">Latest Acticles</h1>
+            <div class="grid grid-cols-1 p-4 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Card Image 1" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930529/image-currency_qkcfxe.jpg"
+                        alt="Card Image 1" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 1</h3>
-                        <p class="text-gray-600 mt-2">A brief description about the first card goes here.</p>
+                        <p>By Claire Robinson</p>
+                        <h3 class="text-xl font-bold text-gray-800">Receive money in any currency with no fees</h3>
+                        <p class="text-gray-600 mt-2">The world is getting smaller and we're becoming more mobile. so why should you be forced to only receive money in a single ...</p>
                     </div>
                 </div>
 
                 <!-- Card 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Card Image 2" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930497/image-restaurant_cckglm.jpg"
+                        alt="Card Image 2" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 2</h3>
-                        <p class="text-gray-600 mt-2">A brief description about the second card goes here.</p>
+                        <p>By Wilson Hutton</p>
+                        <h3 class="text-xl font-bold text-gray-800 hover:text-green-200">Treat yourself without Worrying about money</h3>
+                        <p class="text-gray-600 mt-2">Our simple budgeting feature allows you to seperate out your spending and set realistic limits each month. That means you...</p>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Card Image 3" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930922/image-plane_wpjdoe.jpg"
+                        alt="Card Image 3" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 3</h3>
-                        <p class="text-gray-600 mt-2">A brief description about the third card goes here.</p>
+                        <p>By wilson Hutton</p>
+                        <h3 class="text-xl font-bold text-gray-800">Take your Asovbanking card Wherever you go</h3>
+                        <p class="text-gray-600 mt-2"> We want you to enjoy your travels. This is why we don't charge any fees on purchases while you're abroad. We'll even show you ...</p>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                    <img src="https://via.placeholder.com/400x250" alt="Card Image 4" class="w-full h-48 object-cover">
+                    <img src="https://res.cloudinary.com/de5sm2jjl/image/upload/v1737930650/image-confetti_bz5rcb.jpg"
+                        alt="Card Image 4" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="text-xl font-bold text-gray-800">Card Title 4</h3>
-                        <p class="text-gray-600 mt-2">A brief description about the fourth card goes here.</p>
+                        <p>By wilson Hutton</p>
+                        <h3 class="text-xl font-bold text-gray-800">Our invite-Only Beta accounts are now live!</h3>
+                        <p class="text-gray-600 mt-2">After a lot of hard work by the whole team, we're excited to launch our closed beta. it's easy to request an invite through the site...</p>
                     </div>
                 </div>
             </div>
         </section>
 
     </main>
-    <footer class="p-4 bg-gray-800 text-white text-center">
+    <footer class="p-4 bg-gray-800 text-white text-center mt-4">
         <section class="container mx-auto bg-gray-800">
             <div class="grid grid-cols-12 gap-6">
                 <!-- First Section: 2 Columns -->
                 <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
-                    <h3 class="text-xl font-bold text-white-800">AsovBanking</h3>
-                    <div class="container mx-auto text-center">
+                    <h3 class="text-xl font-bold text-white-800 p-4">AsovBanking</h3>
+                    <div class="container mx-auto py-4 text-center">
                         <div class="flex justify-center space-x-6">
                             <!-- Facebook Icon -->
-                            <a href="#" class="text-blue-600 hover:text-blue-800 text-2xl">
+                            <a href="#" class="text-blue-600 hover:text-blue-800 text-sm">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                             <!-- yotube Icon -->
-                             <a href="#" class="text-red-800 hover:text-blue-600 text-2xl">
+                            <!-- yotube Icon -->
+                            <a href="#" class="text-red-800 hover:text-blue-600 text-sm">
                                 <i class="fab fa-youtube"></i>
                             </a>
 
                             <!-- Twitter Icon -->
-                            <a href="#" class="text-blue-400 hover:text-blue-600 text-2xl">
+                            <a href="#" class="text-blue-400 hover:text-blue-600 text-sm">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                             <!-- press Icon -->
-                             <a href="#" class="text-blue-700 hover:text-blue-900 text-2xl">
+                            <!-- press Icon -->
+                            <a href="#" class="text-blue-700 hover:text-blue-900 text-sm">
                                 <i class="fab fa-pinterest-p"></i>
                             </a>
 
                             <!-- Instagram Icon -->
-                            <a href="#" class="text-pink-500 hover:text-pink-700 text-2xl">
+                            <a href="#" class="text-pink-500 hover:text-pink-700 text-sm">
                                 <i class="fab fa-instagram"></i>
                             </a>
 
-                           
+
                         </div>
                     </div>
 
@@ -221,12 +247,13 @@
                 <!-- Fourth Section: 6 Columns (Larger Section) -->
                 <div class="col-span-12 sm:col-span-12 md:col-span-6 bg-gray-800 p-4 shadow-lg rounded-lg">
                     <div class="container mx-auto text-center">
-                        <button class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
-                          Request Invite
+                        <button
+                            class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                            Request Invite
                         </button>
+                    </div>
+                    <p>@AsovBanking All Right Reserved</p>
                 </div>
-                <p>@AsovBanking All Right Reserved</p>
-            </div>
         </section>
         <p class="text-sm">&copy; 2025 AsovBanking</p>
         <p class="text-sm">This is a simple static page styled with Tailwind CSS v4.0.</p>
