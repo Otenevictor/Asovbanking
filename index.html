@@ -25,7 +25,8 @@
                 <a href="#" class="hover:text-gray-200">careers</a>
             </div>
             <button
-                class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+            onclick="showPopup()"
+                class="hidden cursor-pointer md:flex  space-x-6 px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
                 Request Invite
             </button>
 
@@ -48,7 +49,8 @@
             <a href="#" class="hover:text-gray-200">blog</a>
             <a href="#" class="hover:text-gray-200">careers</a>
             <button
-                class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+            onclick="showPopup()"
+                class="px-6 py-3 cursor-pointer bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
                 Request Invite
             </button>
 
@@ -68,7 +70,8 @@
                             spending, saving, budgeting, investing, and much more.
                         </p>
                         <button
-                            class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                        onclick="showPopup()"
+                            class="px-6 py-3 cursor-pointer bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
                             Request Invite
                         </button>
                     </div>
@@ -184,7 +187,7 @@
                     <div class="p-4">
                         <p>By wilson Hutton</p>
                         <h3 class="text-xl font-bold text-gray-800">Our invite-Only Beta accounts are now live!</h3>
-                        <p class="text-gray-600 mt-2">After a lot of hard work by the whole team, we're excited to launch our closed beta. it's easy to request an invite through the site...</p>
+                        <p class="text-gray-600 mt-2 text-l">After a lot of hard work by the whole team, we're excited to launch our closed beta. it's easy to request an invite through the site...</p>
                     </div>
                 </div>
             </div>
@@ -195,7 +198,7 @@
         <section class="container mx-auto bg-gray-800">
             <div class="grid grid-cols-12 gap-6">
                 <!-- First Section: 2 Columns -->
-                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
+                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4  rounded-lg">
                     <h3 class="text-xl font-bold text-white-800 p-4">AsovBanking</h3>
                     <div class="container mx-auto py-4 text-center">
                         <div class="flex justify-center space-x-6">
@@ -229,7 +232,7 @@
                 </div>
 
                 <!-- Second Section: 2 Columns -->
-                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
+                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4  rounded-lg">
                     <p class="text-white-600 mt-2">About</p>
                     <p class="text-white-600 mt-2">Contact</p>
                     <p class="text-white-600 mt-2">Blog</p>
@@ -237,22 +240,23 @@
                 </div>
 
                 <!-- Third Section: 2 Columns -->
-                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4 shadow-lg rounded-lg">
-                    <p class="text-white-600 mt-2">career</p>
+                <div class="col-span-12 sm:col-span-4 md:col-span-2 bg-gray-800 p-4  rounded-lg">
+                    <p class="text-white-600 mt-0">career</p>
                     <p class="text-white-600 mt-2">Support</p>
                     <p class="text-white-600 mt-2">Privacy</p>
 
                 </div>
 
                 <!-- Fourth Section: 6 Columns (Larger Section) -->
-                <div class="col-span-12 sm:col-span-12 md:col-span-6 bg-gray-800 p-4 shadow-lg rounded-lg">
-                    <div class="container mx-auto text-center">
+                <div class="col-span-12 sm:col-span-12 md:col-span-6 bg-gray-800 p-4  rounded-lg">
+                    <div class="container mx-auto text-center p-3">
                         <button
-                            class="px-6 py-3 bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
+                        onclick="showPopup()"
+                            class="px-6 py-3 cursor-pointer bg-gradient-to-r from-green-400 via-green-500 to-blue-300 text-white font-bold rounded-full hover:from-green-500 hover:to-blue-400 focus:outline-none">
                             Request Invite
                         </button>
                     </div>
-                    <p>@AsovBanking All Right Reserved</p>
+                    <p class="text-sm mt-2">@AsovBanking All Right Reserved</p>
                 </div>
         </section>
         <p class="text-sm">&copy; 2025 AsovBanking</p>
@@ -269,6 +273,9 @@
         menuToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+        function showPopup() {
+    alert("Thank you for visiting AsovBanking. Coming soon.");
+  }
     </script>
 </body>
 
